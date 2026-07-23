@@ -1,0 +1,6 @@
+{
+  "name": "Creator Studio AI",
+  "description": "An all-in-one AI content creation platform for social media, business documents, YouTube scripts, writing projects, and creative text.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
