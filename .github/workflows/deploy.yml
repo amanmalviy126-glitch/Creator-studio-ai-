@@ -76,15 +76,6 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Verify and Restore Gradle Wrapper Jar
-        run: |
-          if ! unzip -t android/gradle/wrapper/gradle-wrapper.jar >/dev/null 2>&1; then
-            echo "Gradle wrapper jar is missing or corrupted. Restoring official gradle-wrapper.jar..."
-            curl -sSL -o android/gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.11.1/gradle/wrapper/gradle-wrapper.jar
-          else
-            echo "Gradle wrapper jar is valid."
-          fi
-
       - name: Sync Capacitor Android
         run: npx cap sync android
 
